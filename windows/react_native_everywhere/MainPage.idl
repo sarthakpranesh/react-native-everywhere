@@ -1,8 +1,0 @@
-namespace react_native_everywhere
-{
-    [default_interface]
-    runtimeclass MainPage : Microsoft.UI.Xaml.Controls.Page
-    {
-        MainPage();
-    }
-}

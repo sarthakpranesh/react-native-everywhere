@@ -1,4 +1,12 @@
 {
-  "name": "react_native_everywhere",
-  "displayName": "react_native_everywhere"
+  "name": "react-native-everywhere",
+  "displayName": "react-native-everywhere",
+  "expo": {
+    "name": "react-native-everywhere",
+    "slug": "react-native-everywhere",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
 }

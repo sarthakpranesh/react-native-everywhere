@@ -1,0 +1,16 @@
+productName: "React Native Everywhere"
+appId: "com.rne.app"
+copyright: "Copyright © year Sarthak Pranesh"
+
+mac:
+  target: "dmg"
+  category: ""
+  icon: ""
+
+win:
+  target: "appx"
+  icon: ""
+
+linux:
+  target: "rpm"
+  icon: ""

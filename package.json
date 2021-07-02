@@ -15,12 +15,16 @@
       {
         "from": "dist/main/",
         "to": "./",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       {
         "from": "dist/renderer",
         "to": "./",
-        "filter": ["**/*"]
+        "filter": [
+          "**/*"
+        ]
       },
       "package.json",
       "**/node_modules/**/*"
@@ -60,9 +64,11 @@
     "react-dom": "^17.0.2",
     "react-native": "~0.63.4",
     "react-native-gesture-handler": "~1.10.2",
+    "react-native-paper": "^4.9.2",
     "react-native-reanimated": "~2.1.0",
     "react-native-screens": "~3.0.0",
     "react-native-unimodules": "~0.13.3",
+    "react-native-vector-icons": "^8.1.0",
     "react-native-web": "^0.16.3"
   },
   "devDependencies": {

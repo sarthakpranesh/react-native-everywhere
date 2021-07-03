@@ -1,32 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Provider as PaperProvider, Headline, Caption, Paragraph } from 'react-native-paper';
+import {Provider as ReduxProvider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+import { Provider as PaperProvider } from 'react-native-paper';
+
+// importing screens 
+import HomeScreen from './src/screens/HomeScreen';
+import CounterScreen from './src/screens/CounterScreen';
+
+// importing stores
+import {store, persister} from './src/stores/index'
 
 export default function App() {
   return (
-    <PaperProvider>
-      <View style={styles.container}>
-        <Headline>React Native Everywhere</Headline>
-        <Paragraph>Start editing the App.tsx file to get started</Paragraph>
-        <Caption style={styles.bottomLabel}>Android + iOS + Web + Windows + Mac + Linux</Caption>
-      </View>
-    </PaperProvider>
+    <ReduxProvider store={store}>
+      <PersistGate loading={null} persistor={persister}>
+        <PaperProvider>
+          <CounterScreen />
+        </PaperProvider>
+      </PersistGate>
+    </ReduxProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f4c2c2',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  h1: {
-    fontSize: 36,
-    fontWeight: 'bold',
-  },
-  bottomLabel: {
-    position: 'absolute',
-    bottom: 10,
-  }
-});

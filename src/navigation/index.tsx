@@ -7,6 +7,10 @@ import { CombinedDarkTheme } from '../services/themes';
 
 // import screens
 import Home from '../screens/Home';
+import Counter from '../screens/Counter';
+
+// importing components
+import MainHeader from '../components/MainHeader';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,10 +19,11 @@ const RootNavigator = () => {
     <NavigationContainer theme={CombinedDarkTheme}>
       <Stack.Navigator
         screenOptions={{
-            headerShown: false,
+            header: MainHeader,
         }}
       >
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Counter" component={Counter} />
       </Stack.Navigator>
     </NavigationContainer>
   );

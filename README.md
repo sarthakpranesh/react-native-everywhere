@@ -1,10 +1,7 @@
-<center>
 
 # React Native Everywhere
 
 ### Expo ( Android + Web + iOS ) + Tauri ( Desktop ) = ♥
-
-</center>
 
 <br />
 
@@ -12,7 +9,7 @@
 
 RNE is a template I made to help me build Beautiful, Efficient, and write once run everywhere apps with Expo (React Native) building to Android, iOS and Web along with Desktop support using [Tauri](https://github.com/tauri-apps/tauri). This template includes some common libraries and configurations that I find myself using in almost all React Native project.
 
-Beware: I am using libraries and configuration the way I like it the most, your choices and the most efficient way to do it might differ but i dun care :P
+Beware: I am using libraries and configuration the way I like the most, your choices and the most efficient way to do it might differ. Also this is work in progress :>
 
 <br />
 
@@ -29,9 +26,9 @@ The most relevant list of packages included in the template are as follows:
 
 ## Using the template
 ### Initial changes
-Okay you have to go on a renaming spree..., please rename the app in the following configs:
-- change `name`, `slug`, `ios:bundleIdentifier`, `android:package` to your project specific details in `/app.json` 
-- change `package:productName`, `tauri:bundle:identifier`, and `tauri:windows:title` to your project specific details in `./src-tauri/tauri.conf.json` 
+Okay you have to go on a renaming/changing/description spree..., please rename the app in the following configs:
+- change all the relevant fields to your project specific details in `/app.json` and `./src-tauri/tauri.conf.json` 
+- change the app icons both in `assets` and `src-tauri/icons` 
 
 Now its time you build your app :>
 

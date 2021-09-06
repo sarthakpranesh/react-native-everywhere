@@ -1,7 +1,7 @@
 {
   "package": {
     "productName": "RNE",
-    "version": "0.1.0"
+    "version": "1.0.0"
   },
   "build": {
     "distDir": "../web-build",
@@ -18,15 +18,14 @@
         "icons/32x32.png",
         "icons/128x128.png",
         "icons/128x128@2x.png",
-        "icons/icon.icns",
         "icons/icon.ico"
       ],
       "resources": [],
       "externalBin": [],
-      "copyright": "",
+      "copyright": "Sarthak Pranesh",
       "category": "DeveloperTool",
-      "shortDescription": "",
-      "longDescription": "",
+      "shortDescription": "RNE is a Expo + Tauri Template",
+      "longDescription": "RNE is a template I (Sarthak Pranesh) made to help me build Beautiful, Efficient, and write once run everywhere apps with Expo (React Native) building to Android, iOS and Web along with Desktop support using Tauri. This template includes some common libraries and configurations that I find myself using in almost all React Native project.",
       "deb": {
         "depends": [],
         "useBootstrapper": false

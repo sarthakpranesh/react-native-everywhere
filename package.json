@@ -1,98 +1,25 @@
 {
-  "main": "index.js",
-  "description": "Simple boilerplate for running React Native everywhere a.k.a iOS, Android, Web, Windows, MacOS, Linux, etc using Expo",
-  "author": "Sarthak Pranesh <sarthakpranesh08@gmail.com>",
-  "name": "react-native-everywhere",
-  "version": "0.0.1",
-  "build": {
-    "productName": "react-native-everywhere",
-    "appId": "com.rne.app",
-    "copyright": "Copyright © year Sarthak Pranesh",
-    "extraMetadata": {
-      "main": "main.js"
-    },
-    "files": [
-      {
-        "from": "dist/main/",
-        "to": "./",
-        "filter": [
-          "**/*"
-        ]
-      },
-      {
-        "from": "dist/renderer",
-        "to": "./",
-        "filter": [
-          "**/*"
-        ]
-      },
-      "package.json",
-      "**/node_modules/**/*"
-    ],
-    "mac": {
-      "target": "dmg",
-      "category": "",
-      "icon": ""
-    },
-    "win": {
-      "target": "appx",
-      "icon": ""
-    },
-    "linux": {
-      "target": "rpm",
-      "icon": ""
-    }
-  },
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
     "web": "expo start --web",
-    "electron": "expo-electron start",
-    "start": "react-native start",
-    "test": "jest",
-    "build-android": "cd ./android && ./gradlew clean && ./gradlew assembleRelease",
-    "build-web": "expo build:web",
-    "build-electron": "yarn electron-webpack && yarn electron-builder --dir -c.mac.identity=null",
-    "build-win": "yarn build-electron && yarn electron-builder build --win",
-    "build-mac": "yarn build-electron && yarn electron-builder build --mac",
-    "build-linux": "yarn build-electron && yarn electron-builder build --linux"
+    "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.15.5",
-    "expo": "~41.0.1",
-    "expo-splash-screen": "~0.10.2",
-    "expo-updates": "~0.5.4",
+    "expo": "~42.0.1",
+    "expo-status-bar": "~1.0.4",
     "react": "16.13.1",
-    "react-dom": "^17.0.2",
-    "react-native": "~0.63.4",
-    "react-native-gesture-handler": "~1.10.2",
-    "react-native-paper": "^4.9.2",
-    "react-native-reanimated": "~2.1.0",
-    "react-native-screens": "~3.0.0",
-    "react-native-unimodules": "~0.13.3",
-    "react-native-vector-icons": "^8.1.0",
-    "react-native-web": "^0.16.3",
-    "react-redux": "^7.2.4",
-    "redux": "^4.1.0",
-    "redux-logger": "^3.0.6",
-    "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0"
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@expo/electron-adapter": "^0.0.55",
-    "@expo/webpack-config": "^0.12.76",
     "@types/react": "~16.9.35",
     "@types/react-native": "~0.63.2",
-    "@types/redux-logger": "^3.0.8",
-    "babel-preset-expo": "~8.3.0",
-    "electron": "^6.0.12",
-    "electron-builder": "^22.11.7",
-    "jest-expo": "~41.0.0",
     "typescript": "~4.0.0"
-  },
-  "jest": {
-    "preset": "react-native"
   },
   "private": true
 }

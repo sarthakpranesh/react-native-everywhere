@@ -25,17 +25,18 @@ The most relevant list of packages included in the template are as follows:
 <br />
 
 ## Using the template
+To Get started click on that `Use this template` button in the repository and create your own repository.
 ### Initial changes
-Okay you have to go on a renaming/changing/description spree..., please rename the app in the following configs:
-- change all the relevant fields to your project specific details in `/app.json` and `./src-tauri/tauri.conf.json` 
-- change the app icons both in `assets` and `src-tauri/icons` 
+We have to make some initial changes before we start building our app, please follow below steps carefully:
+- change all the relevant fields to your project specific details in `./app.json` and `./src-tauri/tauri.conf.json` 
+- change the app icons in `assets`, namely the `adaptive-icon.png`, `favicon.png`, `icon.png` and `splash.png`. Tauri specific icons will be generated using `./assets/icon.png`, once you have added the new assets run `yarn tauri icon ./assets/icon.png` this will generate the asset icons required by our desktop builds.
 
 Now its time you build your app :>
 
 ### Working 
-Their are multiple scripts in the `package.json`, most of them are just the default once that come with tauri and expo so I won't be documenting them. You can find below the general flow of development for desktop apps though.
+Their are multiple scripts in the `package.json`, most of them are just the default once that come with tauri and expo so I won't be documenting them. Building your Android, iOS and Web app using this template is same when using just `expo` so I will be skipping that. You can find below the general flow of development for desktop apps though.
 
-For developing desktop app their are actually two steps, they are as follows:
+For developing desktop app their are actually two steps:
 - tauri depends on a web bundler like `webpack` so we first start our expo web development server using `yarn web` and we leave it running
 - open another terminal and now we can run `yarn desktop` that will start our tauri app in development mode
 

@@ -56,7 +56,7 @@ Enjoy the errors they are a feature :P ( kidding open an issue/improvements [her
 <br />
 
 ## What to expect
-This template will allow you to build beautiful React Native apps quickly for almost all platforms ( Android + iOS + Web + Linux + Windows + MacOS ). For platform specific APIs on Android, iOS and Web things need to be handled using Expo, whereas for desktop we'll be using what's provided by Tauri. This template is fast and reliable and I have run the light house test on it (results below)
+This template will allow you to build beautiful React Native apps quickly for almost all platforms ( Android + iOS + Web + Linux + Windows + MacOS ). For platform specific APIs on Android, iOS and Web things need to be handled using Expo, whereas for desktop we'll be using what's provided by Tauri. This template is fast and reliable and I have run the light house test on it (results below). You can find the release builds for the template in [Github Release Page](https://github.com/sarthakpranesh/react-native-everywhere/releases)
 
 ### Android
 <div align="center">

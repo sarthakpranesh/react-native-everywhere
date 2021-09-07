@@ -13,7 +13,7 @@
 
 RNE is a template I made to help me build Beautiful, Efficient, and write once run everywhere apps with Expo (React Native) building to Android, iOS and Web along with Desktop support using [Tauri](https://github.com/tauri-apps/tauri). This template includes some common libraries and configurations that I find myself using in almost all React Native project.
 
-Beware: I am using libraries and configuration the way I like the most, your choices and the most efficient way to do it might differ. Also this is work in progress :>
+Beware: I am using libraries and configuration the way I like the most, your choices and the most efficient way to do it might differ.
 
 <br />
 

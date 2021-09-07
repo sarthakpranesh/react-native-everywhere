@@ -1,21 +1,19 @@
-import 'react-native-gesture-handler';
-import { StatusBar } from 'expo-status-bar';
-import React, {useState, useEffect, useCallback} from 'react';
-import { View, Platform } from 'react-native';
-import { Provider as ReduxProvider } from 'react-redux'
-import { PersistGate } from 'redux-persist/integration/react'
-import { Provider as PaperProvider } from 'react-native-paper';
+import "react-native-gesture-handler";
 import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
+import React, { useState, useEffect, useCallback } from "react";
+import { View, Platform } from "react-native";
+import { Provider as PaperProvider } from "react-native-paper";
+import { Provider as ReduxProvider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
 
 // import root navigator
-import RootNavigator from './src/navigation';
-// import combined theme for paper provider
-import { CombinedDarkTheme } from './src/services/themes';
-// import store and persistor
-import {store, persister} from "./src/services/redux/index";
-// expo-splash-screen is not supported on Web and hence won't work on Tauri either
-// so we define a programed splash screen to be displayed
-import SplashScreenWeb from './src/screens/SplashScreen.web';
+import RootNavigator from "./src/navigation";
+// importing screens
+import SplashScreenWeb from "./src/screens/SplashScreen.web";
+// importing services
+import { store, persister } from "./src/services/redux/index";
+import { CombinedDarkTheme } from "./src/services/themes";
 
 export default function App() {
   const [isAppReady, setIsAppReady] = useState<boolean>(false);
@@ -28,29 +26,29 @@ export default function App() {
         await SplashScreen.preventAutoHideAsync();
         // we can also load required assets here like initial API requests, fonts, etc.
       } catch (err) {
-        console.log(err)
+        console.log(err);
       } finally {
         setIsAppReady(true);
       }
-    })()
-  }, [])
+    })();
+  }, []);
 
   // use a onLayout callback to avoid flicker when transitioning from splash to rendered app
   const onLayout = useCallback(async () => {
     if (isAppReady) {
-      await SplashScreen.hideAsync()
+      await SplashScreen.hideAsync();
     }
-  }, [isAppReady])
+  }, [isAppReady]);
 
   if (!isAppReady) {
     if (Platform.OS === "web") {
-      return <SplashScreenWeb />
+      return <SplashScreenWeb />;
     }
-    return null
+    return null;
   }
 
   return (
-    <View onLayout={onLayout} style={{flex: 1}}>
+    <View onLayout={onLayout} style={{ flex: 1 }}>
       <ReduxProvider store={store}>
         <PersistGate loading={false} persistor={persister}>
           <PaperProvider theme={CombinedDarkTheme}>

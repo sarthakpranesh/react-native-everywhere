@@ -8,9 +8,7 @@ const MainHeader = (props: any) => {
   if (name === "Counter") {
     return (
       <Appbar.Header style={styles.appMainHeader}>
-        <Appbar.BackAction
-          onPress={() => props.navigation.goBack()}
-        />
+        <Appbar.BackAction onPress={() => props.navigation.goBack()} />
         <Appbar.Content title={name} />
       </Appbar.Header>
     );
@@ -31,9 +29,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0,
     elevation: 0,
   },
-  appTitle:{
+  appTitle: {
     marginBottom: 40,
-  }
+  },
 });
 
 export default MainHeader;

@@ -1,4 +1,6 @@
 
+<img align="center" src="./assets/icon.png" />
+
 # React Native Everywhere
 
 ### Expo ( Android + Web + iOS ) + Tauri ( Desktop ) = ♥

@@ -52,3 +52,39 @@ For building desktop app we employee a similar approach:
 
 ## Issues
 Enjoy the errors they are a feature :P ( kidding open an issue/improvements [here](https://github.com/sarthakpranesh/react-native-everywhere/issues))
+
+<br />
+
+## What to expect
+This template will allow you to build beautiful React Native apps quickly for almost all platforms ( Android + iOS + Web + Linux + Windows + MacOS ). For platform specific APIs on Android, iOS and Web things need to be handled using Expo, whereas for desktop we'll be using what's provided by Tauri. This template is fast and reliable and I have run the light house test on it (results below)
+
+### Android
+<div align="center">
+    <img src="./repoAssets/android.png" width="300">
+</div>
+
+### Web
+<div align="center">
+    <img src="./repoAssets/web.png" width="600">
+    <img src="./repoAssets/lighthouse.png" width="600">
+</div>
+
+### Linux
+#### Debian
+<div align="center">
+    <img src="./repoAssets/debian-store.png" width="600">
+    <img src="./repoAssets/debian-app.png" width="600">
+</div>
+
+#### AppImage
+<div align="center">
+    <img src="./repoAssets/appimage.png" width="600">
+</div>
+
+<br />
+
+<div align="center">
+
+### Made with ♥ in India
+
+</div>

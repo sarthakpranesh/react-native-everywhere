@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {
+  createStackNavigator,
+  TransitionSpecs,
+  CardStyleInterpolators, } from '@react-navigation/stack';
 
 // importing theme to apply to Navigation container
 import { CombinedDarkTheme } from '../services/themes';
@@ -12,7 +15,7 @@ import Counter from '../screens/Counter';
 // importing components
 import MainHeader from '../components/MainHeader';
 
-const Stack = createNativeStackNavigator();
+const Stack =   createStackNavigator();
 
 const RootNavigator = () => {
   return (
@@ -20,6 +23,12 @@ const RootNavigator = () => {
       <Stack.Navigator
         screenOptions={{
             header: MainHeader,
+            gestureDirection: "horizontal",
+            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            transitionSpec: {
+              open: TransitionSpecs.TransitionIOSSpec,
+              close: TransitionSpecs.TransitionIOSSpec,
+            },
         }}
       >
         <Stack.Screen name="Home" component={Home} />

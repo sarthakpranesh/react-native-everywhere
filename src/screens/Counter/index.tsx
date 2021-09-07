@@ -1,14 +1,14 @@
 import * as React from "react";
 import { View, StyleSheet } from "react-native";
 import { Button, Headline } from "react-native-paper";
-import { useDispatch, useSelector } from "react-redux";
 
-// import reducer actions
+// import redux stuff
+import { useAppSelector, useAppDispatch } from "../../services/redux";
 import { increment, decrement } from "../../services/redux/reducers/DefaultReducer";
 
 const Counter = () => {
-    const counter = useSelector((state: any) => state.root.default.counter);
-    const dispatch = useDispatch()
+    const counter = useAppSelector((state) => state.root.default.counter);
+    const dispatch = useAppDispatch()
 
     return (
         <View style={styles.container}>

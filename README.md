@@ -1,10 +1,12 @@
 
-<img align="center" src="./assets/icon.png" />
+<div align="center">
+<img align="center" src="./assets/icon.png" width="200" />
 
 # React Native Everywhere
 
 ### Expo ( Android + Web + iOS ) + Tauri ( Desktop ) = ♥
 
+</div>
 <br />
 
 ## What is RNE?

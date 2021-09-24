@@ -69,6 +69,11 @@ This template will allow you to build beautiful React Native apps quickly for al
     <img src="./repoAssets/lighthouse.png" width="600">
 </div>
 
+### Mac
+<div align="center">
+    <img src="./repoAssets/mac.png" width="600" />
+</div>
+
 ### Linux
 #### Debian
 <div align="center">

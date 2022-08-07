@@ -7,9 +7,9 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "desktop": "tauri dev",
-    "build-android": "expo build:android",
-    "build-ios": "expo build:ios",
-    "build-web": "expo build:web",
+    "build-android": "eas build -p android",
+    "build-ios": "eas build -p ios",
+    "build-web": "expo export:web",
     "build-desktop": "tauri build",
     "lint": "eslint ."
   },

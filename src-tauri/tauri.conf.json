@@ -27,13 +27,11 @@
       "shortDescription": "RNE is a Expo + Tauri Template",
       "longDescription": "RNE is a template I (Sarthak Pranesh) made to help me build Beautiful, Efficient, and write once run everywhere apps with Expo (React Native) building to Android, iOS and Web along with Desktop support using Tauri. This template includes some common libraries and configurations that I find myself using in almost all React Native project.",
       "deb": {
-        "depends": [],
-        "useBootstrapper": false
+        "depends": []
       },
       "macOS": {
         "frameworks": [],
         "minimumSystemVersion": "",
-        "useBootstrapper": false,
         "exceptionDomain": "",
         "signingIdentity": null,
         "entitlements": null
